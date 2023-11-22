@@ -9,7 +9,7 @@ def home():
         data = "hello world"
         return jsonify({'data': data})
 
-@app.route('/home/<string:msg>', methods=['GET'])
+@app.route('/chat/<string:msg>', methods=['GET'])
 def disp(msg):
     token = "34f5788ba1f0cfcb8b8f03437c732bad6e0abd2a"
     client = PyCAI(token)
